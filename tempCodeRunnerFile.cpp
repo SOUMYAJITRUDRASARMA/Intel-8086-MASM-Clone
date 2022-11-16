@@ -1,0 +1,13 @@
+ fp.open("lol.obj", ios::out | ios::trunc | ios::binary);
+    for(char ch: tpa.tModuleHeader->getBinaryRepresentation()) fp << ch;
+    for(char ch: tpa.lnames->getBinaryRepresentation()) fp << ch;
+    for(char ch: tpa.segdefCode->getBinaryRepresentation()) fp << ch;
+    for(char ch: tpa.segdefData->getBinaryRepresentation()) fp << ch;
+    for(char ch: tpa.segdefStack->getBinaryRepresentation()) fp << ch;
+    for(char ch: tpa.grpdefDgroup->getBinaryRepresentation()) fp << ch;
+    for(char ch: tpa.coment_Data->getBinaryRepresentation()) fp << ch;
+    for(char ch: tpa.leDataText->getBinaryRepresentation()) fp << ch;
+    for(char ch: tpa.leDataCode->getBinaryRepresentation()) fp << ch;
+    for(char ch: tpa.fixupp->getBinaryRepresentation()) fp << ch;
+    for(char ch: tpa.endRecord->getBinaryRepresentation()) fp << ch;
+    fp.close();

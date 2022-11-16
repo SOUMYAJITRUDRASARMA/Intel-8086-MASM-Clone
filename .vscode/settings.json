@@ -1,0 +1,15 @@
+{
+    "files.associations": {
+        "*.ejs": "html",
+        "*.pl": "prolog",
+        "iostream": "cpp",
+        "cstddef": "cpp",
+        "new": "cpp",
+        "*.tcc": "cpp",
+        "fstream": "cpp",
+        "charconv": "cpp",
+        "string": "cpp",
+        "deque": "cpp",
+        "vector": "cpp"
+    }
+}
